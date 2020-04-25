@@ -4,6 +4,10 @@
   "description": "CLI for creating image renditions",
   "main": "index.js",
   "bin": "./bin/image-sizes-cli.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hnauen/image-sizes-cli.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
