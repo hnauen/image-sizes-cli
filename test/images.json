@@ -1,0 +1,16 @@
+{
+    "blurred-test-image.jpg": {
+        "source": "blurred test image.jpg",
+        "description": "blurred test image"
+    },
+    "fancy-folder-aou/fancy-lessfilenamegreater-aou.jpg": {
+        "source": "fancy folder äöü/fancy <filename> äöü.jpg",
+        "description": "fancy <filename> äöü",
+        "resizeOptions": {
+            "position": "left"
+        },
+        "outputOptions": {
+            "quality": 1
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "image-sizes-cli",
+  "version": "0.0.1",
+  "description": "CLI for creating image renditions",
+  "main": "index.js",
+  "bin": "./bin/image-sizes-cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Holger Nauen",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^5.0.0",
+    "glob": "^7.1.6",
+    "sharp": "^0.25.2",
+    "slugify": "^1.4.0",
+    "winston": "^3.2.1"
+  }
+}
