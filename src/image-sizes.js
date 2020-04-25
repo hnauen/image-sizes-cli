@@ -132,8 +132,6 @@ function mergeImageList(images, fileNames, slugifyOutput) {
     const updatedImages = images;
 
     fileNames.forEach(fileName => {
-        logger.info("process %s", fileName);
-
         const outputFile = slugifyOutput ? slugifyPath(fileName) : fileName;
         if (!updatedImages[outputFile]) {
             updatedImages[outputFile] = {
@@ -209,7 +207,9 @@ function generateImages(options) {
 
     // do the magic
     for (var outputFileName in images) {
-        processImage(outputFileName, images[outputFileName], renditions, options);
+        if (fileNames.includes(images[outputFileName].source)) {
+            processImage(outputFileName, images[outputFileName], renditions, options);
+        }
     }
 
     // write images file if needed
