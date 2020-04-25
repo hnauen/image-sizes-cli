@@ -26,7 +26,7 @@ $ image-sizes-cli
   --copy
   --slugifyOutput
   --renditionSizes 100x200,150x300
-  --renditionFileNameTemplate ${name}/${width}x${height}.${ext}'
+  --renditionFileNameTemplate ${name}/${width}x${height}.${ext}
   --renditionFileFormats jpg,webp
   --resizeOptions '{"position":left}'
   --outputOptions '{"progressive":true}'
